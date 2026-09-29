@@ -1,0 +1,31 @@
+~~~
+#3.1
+def umn12():
+    x2 = x + x
+    x4 = x2 + x2
+    x8 = x4 + x4
+    return x8 + x4
+#3.2
+def umn16():
+    x2 = x + x
+    x4 = x2 + x2
+    x8 = x4 + x4
+    x16 = x8 + x8
+    return x16
+#3.3
+def umn15():
+    x2 = x + x
+    x4 = x2 + x2
+    x8 = x4 + x4
+    mx7 = x - x8
+    return x8 - mx7
+#3.5
+def fast_mul(x, y):
+    result = 0
+    while y > 0:
+        if y & 1:              # младший бит y равен 1
+            result += x
+        x <<= 1                # x *= 2
+        y >>= 1                # y //= 2
+    return result
+    ~~~
